@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Irem AI Consulting</title>
+  <meta name="description" content="About Irem, founder and principal consultant.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" data-nav>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Irem AI Consulting</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="cause.html" data-nav>Our Cause</a>
+        <a href="schedule.html" class="cta" data-nav>Schedule a Call</a>
+        <a href="reach.html" data-nav>Reach Out</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <div>
+            <h1>Hi, I’m Irem</h1>
+            <p class="subtitle">Founder and principal consultant. I help teams translate AI capability into measurable business results—responsibly and pragmatically.</p>
+            <div class="pills">
+              <span class="pill">Product-minded</span>
+              <span class="pill">Full‑stack ML</span>
+              <span class="pill">LLM Engineering</span>
+              <span class="pill">MLOps</span>
+              <span class="pill">DX & Enablement</span>
+            </div>
+          </div>
+          <div class="illus" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Experience</h3>
+          <p class="muted">Shipped AI features and platforms across startups and enterprise—covering search, summarization, classification, agents, and analytics.</p>
+        </div>
+        <div class="card">
+          <h3>Approach</h3>
+          <p class="muted">Outcomes first. We start small, instrument everything, and iterate. Clear docs and handoff so your team can own it.</p>
+        </div>
+        <div class="card">
+          <h3>Tooling</h3>
+          <p class="muted">OpenAI, Anthropic, local LLMs, vector stores, orchestration, observability, CI/CD, and cloud infra you already use.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> Irem AI Consulting · <a href="reach.html" data-nav>Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+

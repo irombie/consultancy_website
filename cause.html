@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Cause — Irem AI Consulting</title>
+  <meta name="description" content="Our mission: responsible, practical AI that benefits teams and users.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .cause-list { display: grid; gap: 12px; }
+    .cause-item { display: grid; gap: 6px; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" data-nav>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Irem AI Consulting</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="cause.html" data-nav>Our Cause</a>
+        <a href="schedule.html" class="cta" data-nav>Schedule a Call</a>
+        <a href="reach.html" data-nav>Reach Out</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <div>
+            <h1>Why we do this</h1>
+            <p class="subtitle">AI should create leverage for people, not complexity. We advocate for transparent systems, respectful data use, and meaningful outcomes.</p>
+            <div class="cause-list">
+              <div class="cause-item">
+                <h3>Responsible by default</h3>
+                <p class="muted">Guardrails, evaluations, and human-in-the-loop where it matters. We bake safety into the lifecycle.</p>
+              </div>
+              <div class="cause-item">
+                <h3>Practical over flashy</h3>
+                <p class="muted">We prioritize reliability and user value over demos. Sustainable, maintainable systems win.</p>
+              </div>
+              <div class="cause-item">
+                <h3>Enablement first</h3>
+                <p class="muted">We upskill your team as we build—through docs, playbooks, and pairing—so you can own the outcomes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="illus" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> Irem AI Consulting · <a href="reach.html" data-nav>Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+

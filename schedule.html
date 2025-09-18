@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule a Call — Irem AI Consulting</title>
+  <meta name="description" content="Book an intro call to discuss your AI goals.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" data-nav>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Irem AI Consulting</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="cause.html" data-nav>Our Cause</a>
+        <a href="schedule.html" class="cta" data-nav>Schedule a Call</a>
+        <a href="reach.html" data-nav>Reach Out</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <div>
+            <h1>Book a 30-minute intro</h1>
+            <p class="subtitle">Tell us about your goals. We’ll share actionable ideas and next steps. No obligations.</p>
+            <form class="form card" style="margin-top:12px;">
+              <div>
+                <label for="name">Your name</label>
+                <input class="input" id="name" name="name" placeholder="Jane Doe">
+              </div>
+              <div>
+                <label for="email">Work email</label>
+                <input class="input" id="email" type="email" name="email" placeholder="jane@company.com">
+              </div>
+              <div>
+                <label for="focus">Primary focus</label>
+                <select class="select" id="focus" name="focus">
+                  <option>AI Strategy</option>
+                  <option>LLM Application</option>
+                  <option>Data & MLOps</option>
+                  <option>Evaluation & Safety</option>
+                </select>
+              </div>
+              <div>
+                <label for="notes">Context (optional)</label>
+                <textarea class="textarea" id="notes" name="notes" rows="4" placeholder="What would make this engagement a success?"></textarea>
+              </div>
+              <div class="button-row">
+                <button type="submit" class="button primary">Request meeting</button>
+                <a class="button" href="reach.html" data-nav>Prefer email?</a>
+              </div>
+            </form>
+          </div>
+          <div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly/intro-30?hide_event_type_details=1&primary_color=00d4ff" style="min-width:320px;height:700px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> Irem AI Consulting · <a href="reach.html" data-nav>Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
