@@ -89,14 +89,20 @@ body {
   background: rgba(255,255,255,0.06);
 }
 
+.nav-links a.cta,
 .cta {
-  padding: 10px 14px;
-  border-radius: 12px;
-  color: #0a0d1a;
-  background: linear-gradient(135deg, var(--secondary), var(--accent-2));
-  text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 10px 24px rgba(0, 212, 255, 0.25);
+  padding: 10px 14px !important;
+  border-radius: 12px !important;
+  color: #0a0d1a !important;
+  background: linear-gradient(135deg, var(--secondary), var(--accent-2)) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  box-shadow: 0 10px 24px rgba(0, 212, 255, 0.25) !important;
+}
+
+.nav-links a.cta:hover {
+  background: linear-gradient(135deg, var(--secondary), var(--accent-2)) !important;
+  opacity: 0.9;
 }
 
 /* Hero / Sections */

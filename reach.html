@@ -6,6 +6,7 @@
   <title>İletişim — Irem Ergun AI Danışmanlığı</title>
   <meta name="description" content="Irem Ergun AI Danışmanlığı ile iletişime geçin.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 </head>
 <body>
   <header class="header">
@@ -18,8 +19,7 @@
         <a href="index.html" data-nav>Ana Sayfa</a>
         <a href="about.html" data-nav>Hakkımda</a>
         <a href="cause.html" data-nav>Misyonumuz</a>
-        <a href="schedule.html" class="cta" data-nav>Görüşme Planla</a>
-        <a href="reach.html" data-nav>İletişim</a>
+        <a href="reach.html" class="cta" data-nav>İletişim</a>
       </nav>
     </div>
   </header>
@@ -35,10 +35,12 @@
                 <p><strong>Email:</strong><br> <a href="mailto:iremlergun@gmail.com" style="color: green;">iremlergun@gmail.com</a></p>
                 <p><strong>LinkedIn:</strong><br> <a href="https://www.linkedin.com/in/irem-machine-learning-engineer/" target="_blank" style="color: green;">www.linkedin.com/in/irem-machine-learning-engineer/</a></p>
                 <p><strong>Twitter/X:</strong><br> <a href="https://twitter.com/irombie" target="_blank" style="color: green;">twitter.com/irombie</a></p>
-              <!-- <p class="muted"</p> -->
+                <p><strong>CV:</strong><br> <a href="assets/cv.pdf" target="_blank" style="color: green;">Download CV</a></p>
             </div>
           </div>
-          <div class="illus" aria-hidden="true"></div>
+          <div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/iremlergun/ai_danismanlik?hide_event_type_details=1&primary_color=00d4ff" style="min-width:320px;height:700px;"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -51,6 +53,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
