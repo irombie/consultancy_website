@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Schedule a Call — Irem Ergun AI Consulting</title>
-  <meta name="description" content="Book an intro call to discuss your AI goals.">
+  <title>Görüşme Planla — Irem Ergun AI Danışmanlığı</title>
+  <meta name="description" content="AI hedeflerinizi görüşmek için tanışma görüşmesi planlayın.">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 </head>
@@ -13,14 +13,14 @@
     <div class="container navbar">
       <a class="brand" href="index.html" data-nav>
         <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-name">Irem Ergun AI Consulting</span>
+        <span class="brand-name">Irem Ergun AI Danışmanlığı</span>
       </a>
       <nav class="nav-links">
-        <a href="index.html" data-nav>Home</a>
-        <a href="about.html" data-nav>About</a>
-        <a href="cause.html" data-nav>Our Cause</a>
-        <a href="schedule.html" class="cta" data-nav>Schedule a Call</a>
-        <a href="reach.html" data-nav>Reach Out</a>
+        <a href="index.html" data-nav>Ana Sayfa</a>
+        <a href="about.html" data-nav>Hakkımda</a>
+        <a href="cause.html" data-nav>Misyonumuz</a>
+        <a href="schedule.html" class="cta" data-nav>Görüşme Planla</a>
+        <a href="reach.html" data-nav>İletişim</a>
       </nav>
     </div>
   </header>
@@ -30,38 +30,38 @@
       <div class="container">
         <div class="card">
           <div>
-            <h1>Book a 30-minute intro</h1>
-            <p class="subtitle">Tell us about your goals. We’ll share actionable ideas and next steps. No obligations.</p>
+            <h1>30 dakikalık tanışma görüşmesi planlayın</h1>
+            <p class="subtitle">Hedeflerinizi anlatın. Eylem planı fikirleri ve sonraki adımları paylaşacağız. Hiçbir yükümlülük yok.</p>
             <form class="form card" style="margin-top:12px;">
               <div>
-                <label for="name">Your name</label>
-                <input class="input" id="name" name="name" placeholder="Jane Doe">
+                <label for="name">Adınız</label>
+                <input class="input" id="name" name="name" placeholder="Ahmet Yılmaz">
               </div>
               <div>
-                <label for="email">Work email</label>
-                <input class="input" id="email" type="email" name="email" placeholder="jane@company.com">
+                <label for="email">İş e-postası</label>
+                <input class="input" id="email" type="email" name="email" placeholder="ahmet@sirket.com">
               </div>
               <div>
-                <label for="focus">Primary focus</label>
+                <label for="focus">Ana odak alanı</label>
                 <select class="select" id="focus" name="focus">
-                  <option>AI Strategy</option>
-                  <option>LLM Application</option>
-                  <option>Data & MLOps</option>
-                  <option>Evaluation & Safety</option>
+                  <option>AI Stratejisi</option>
+                  <option>LLM Uygulaması</option>
+                  <option>Veri & MLOps</option>
+                  <option>Değerlendirme & Güvenlik</option>
                 </select>
               </div>
               <div>
-                <label for="notes">Context (optional)</label>
-                <textarea class="textarea" id="notes" name="notes" rows="4" placeholder="What would make this engagement a success?"></textarea>
+                <label for="notes">Bağlam (isteğe bağlı)</label>
+                <textarea class="textarea" id="notes" name="notes" rows="4" placeholder="Bu işbirliğini başarılı kılacak şey nedir?"></textarea>
               </div>
               <div class="button-row">
-                <button type="submit" class="button primary">Request meeting</button>
-                <a class="button" href="reach.html" data-nav>Prefer email?</a>
+                <button type="submit" class="button primary">Görüşme talep et</button>
+                <a class="button" href="reach.html" data-nav>E-posta tercih eder misiniz?</a>
               </div>
             </form>
           </div>
           <div>
-            <div class="calendly-inline-widget" data-url="https://calendly.com/your-calendly/intro-30?hide_event_type_details=1&primary_color=00d4ff" style="min-width:320px;height:700px;"></div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/iremlergun/ai_danismanlik?hide_event_type_details=1&primary_color=00d4ff" style="min-width:320px;height:700px;"></div>
           </div>
         </div>
       </div>
@@ -70,13 +70,42 @@
 
   <footer class="footer">
     <div class="container">
-      <div>© <span id="year"></span> Irem Ergun AI Consulting · <a href="reach.html" data-nav>Contact</a></div>
+      <div>© <span id="year"></span> Irem Ergun AI Danışmanlığı · <a href="reach.html" data-nav>İletişim</a></div>
     </div>
   </footer>
 
   <script src="script.js"></script>
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Handle form submission (backup option)
+    document.querySelector('.form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const focus = formData.get('focus');
+      const notes = formData.get('notes');
+      
+      // Create mailto link with form data
+      const subject = `Tanışma Görüşmesi Talebi - ${focus}`;
+      const body = `Merhaba Irem,
+
+AI hedeflerimi görüşmek için tanışma görüşmesi planlamak istiyorum.
+
+Ad: ${name}
+E-posta: ${email}
+Odak Alanı: ${focus}
+${notes ? `Notlar: ${notes}` : ''}
+
+Sizden haber almayı dört gözle bekliyorum!`;
+      
+      const mailtoLink = `mailto:iremlergun@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    });
+  </script>
 </body>
 </html>
 
