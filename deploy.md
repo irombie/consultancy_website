@@ -37,3 +37,4 @@
 - All pages have consistent navigation
 - Responsive design included
 - No server-side code needed
+
