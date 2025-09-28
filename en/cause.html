@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Mission — IROMIND AI Consultancy</title>
+  <meta name="description" content="Our mission: responsible, practical AI that benefits teams and users.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .cause-list { display: grid; gap: 12px; }
+    .cause-item { display: grid; gap: 6px; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" data-nav>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">IROMIND AI Consultancy</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="cause.html" data-nav>Mission</a>
+        <a href="customers.html" data-nav>Customers</a>
+        <a href="reach.html" class="cta" data-nav>Contact</a>
+        <div class="language-toggle">
+          <a href="../cause.html" class="lang-btn">TR</a>
+          <a href="cause.html" class="lang-btn active">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <div>
+            <h2>Why consultancy?</h2>
+            <p class="subtitle" style="font-size: 1.05em;">
+              It's becoming increasingly clear that artificial intelligence is the technology of today and tomorrow. However, according to <a href="https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf" target="_blank" rel="noopener noreferrer" style="color: green;">a 2025 MIT study</a>, 95% of companies investing in AI fail to see a return on their investment. This is because companies cannot properly integrate existing technologies into their systems. As someone who has been directly involved in the development process of these models, I understand the strengths and weaknesses of these models and I am confident that I can guide your company in this regard.
+            </p>
+            <div class="cause-list">
+              <div class="cause-item">
+                <h3>Why do I do this?</h3>
+                <p class="muted">My consultancy is non-profit. My main goal is to contribute to the development of Turkey's technology ecosystem and thus to the development of our country.</p>
+              </div>
+              <div class="cause-item">
+                <h3>Fees</h3>
+                <p class="muted">The first two 45-minute sessions with any company are <strong>free of charge</strong>. If the consulting company deems it appropriate, an appropriate amount can be donated to the <a href="https://www.cydd.org.tr" target="_blank" rel="noopener noreferrer" style="color: green;">Foundation for the Support of Contemporary Life</a>.</p>
+              </div>
+              <div class="cause-item">
+                <h3>Partnership</h3>
+                <p class="muted">If you would like to establish a regular consultancy relationship, please contact me; I would be happy to start the process if we reach a mutual agreement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="illus" aria-hidden="true">
+            <img src="../assets/misyon.png" alt="AI Consultancy Illustration" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> IROMIND AI Consultancy · <a href="reach.html" data-nav>Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

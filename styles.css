@@ -105,6 +105,33 @@ body {
   opacity: 0.9;
 }
 
+.language-toggle {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.lang-btn {
+  padding: 6px 10px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  color: var(--text-muted) !important;
+  background: rgba(255,255,255,0.06) !important;
+  transition: 150ms ease !important;
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,0.12) !important;
+  color: var(--text) !important;
+}
+
+.lang-btn.active {
+  background: rgba(124, 92, 255, 0.2) !important;
+  color: var(--secondary) !important;
+}
+
 /* Hero / Sections */
 .hero {
   padding: 64px 0 24px;
@@ -206,5 +233,26 @@ label { font-size: 14px; color: var(--muted); }
 @media (max-width: 900px) {
   .hero .card { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
+  .nav-links { 
+    display: none; 
+  }
+  .language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+  .language-toggle {
+    gap: 4px;
+  }
+  .lang-btn {
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+  }
 } 

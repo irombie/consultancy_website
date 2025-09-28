@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IROMIND AI Consultancy — Modern AI Solutions</title>
+  <meta name="description" content="AI consultancy to design, develop, and deploy effective AI solutions.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" data-nav>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">IROMIND AI Consultancy</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="cause.html" data-nav>Mission</a>
+        <a href="customers.html" data-nav>Customers</a>
+        <a href="reach.html" class="cta" data-nav>Contact</a>
+        <div class="language-toggle">
+          <a href="../index.html" class="lang-btn">TR</a>
+          <a href="index.html" class="lang-btn active">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="card">
+          <div>
+            <h1 style="font-size: 2.2em;">Transform AI into Results</h1>
+            <p class="subtitle">We're here to help you make the most of the rapidly evolving AI ecosystem. Our goal is to connect Turkey's technology landscape with the global AI ecosystem and ensure companies benefit from these systems with concrete, measurable results—not just pilot projects.
+              </p>
+            <div class="pills">
+              <span class="pill">AI Strategy</span>
+              <span class="pill">LLMs</span>
+              <span class="pill">RAG (Retrieval-Augmented Generation)</span>
+              <span class="pill">MLOps</span>
+              <span class="pill">Agentic Workflows</span>
+            </div>
+            <div class="button-row" style="margin-top:16px;">
+              <a class="button primary" href="reach.html" data-nav>Schedule Meeting</a>
+              <a class="button" href="about.html" data-nav>Meet the Founder</a>
+            </div>
+          </div>
+          <div class="illus" aria-hidden="true">
+            <img src="../assets/index.png" alt="AI Consultancy Illustration" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Discovery → Planning</h3>
+          <p class="muted">Rapidly assess opportunities, define success, and align stakeholders on a clear, phased roadmap.</p>
+        </div>
+        <div class="card">
+          <h3>Prototype → Validation</h3>
+          <p class="muted">Deliver a working slice within weeks. Measure impact with real users and data, then iterate.</p>
+        </div>
+        <div class="card">
+          <h3>Deploy → Scale</h3>
+          <p class="muted">Strengthen, automate, and monitor. We prepare you for reliable, cost-conscious operations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> IROMIND AI Consultancy · <a href="reach.html" data-nav>Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
